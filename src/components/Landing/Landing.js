@@ -13,7 +13,9 @@ import {
     FaLinkedin,
     FaGithub,
     FaYoutube,
+    FaGitlab,
     FaBlogger,
+    FaInstagram
 } from 'react-icons/fa';
 
 function Landing() {
@@ -101,7 +103,20 @@ function Landing() {
                                 />
                             </a>
                         )}
-                        {/* {socialsData.twitter && (
+                        {socialsData.gitlab && (
+                            <a
+                                href={socialsData.gitlab}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <FaGitlab
+                                    className='landing--social'
+                                    style={{ color: theme.secondary }}
+                                    aria-label='GitLab'
+                                />
+                            </a>
+                        )}
+                        {socialsData.twitter && (
                             <a
                                 href={socialsData.twitter}
                                 target='_blank'
@@ -111,6 +126,19 @@ function Landing() {
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
                                     aria-label='Twitter'
+                                />
+                            </a>
+                        )}
+                        {socialsData.instagram && (
+                            <a
+                                href={socialsData.instagram}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <FaInstagram
+                                    className='landing--social'
+                                    style={{ color: theme.secondary }}
+                                    aria-label='Instagram'
                                 />
                             </a>
                         )}
@@ -127,7 +155,7 @@ function Landing() {
                                 />
                             </a>
                         )}
-                        {socialsData.blogger && (
+                        {/* {socialsData.blogger && (
                             <a
                                 href={socialsData.blogger}
                                 target='_blank'

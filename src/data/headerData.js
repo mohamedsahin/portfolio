@@ -1,9 +1,10 @@
 import resume from '../assets/pdf/resume.pdf'
+import profilePic from '../assets/img/profilepic7.png'
 
 export const headerData = {
-    name: 'Sreerag Rajan',
-    title: "Web Developer",
-    desciption:"Life may be a meandering path but don't worry about it, rather enjoy it. It is about the journey, not the destination so explore all that comes your way, learn and grow from it, for this journey only happens once.",
-    image: 'https://avatars.githubusercontent.com/u/85482640?v=4',
+    name: 'Mohamed Sahin',
+    title: "Front-End Developer",
+    desciption:"“Learning to write programs stretches your mind, and helps you think better, creates a way of thinking about things that I think is helpful in all domains.” - Bill Gates",
+    image: profilePic,
     resumePdf: resume
 }
